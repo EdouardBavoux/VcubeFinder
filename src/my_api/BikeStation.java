@@ -70,7 +70,7 @@ public class BikeStation implements Comparable<BikeStation>{
 				+ Math.cos(Math.toRadians(point[0])) * Math.cos(Math.toRadians(this.position[0]))
 				* Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
 		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-		double distance = R * c * 1000; // convert to meters
+		double distance = Math.round(R * c * 1000); // convert to meters
 		return distance;
 	}
 }

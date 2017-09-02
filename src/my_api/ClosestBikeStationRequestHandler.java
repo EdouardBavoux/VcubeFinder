@@ -20,7 +20,7 @@ import java.net.ProtocolException;
 
 import javax.ws.rs.core.Context;
 
-@Path("/findClosestBikeStation")
+@Path("/closest_bike_stations")
 public class ClosestBikeStationRequestHandler {
 
 	@GET
